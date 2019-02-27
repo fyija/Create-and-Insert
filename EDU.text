@@ -1,0 +1,39 @@
+Jan Edu 
+XI - Lynx
+ComprogB
+02/27/2019
+
+
+ACTIVITY: CREATE 
+
+CREATE TABLE `db_student_info`.`tbl_employees` ( `employee_id` INT NOT NULL , `fname` INT(30) NOT NULL , `lname` INT(30) NOT NULL , `title` VARCHAR(30) NOT NULL , `age` INT(3) NOT NULL , `salary` FLOAT NOT NULL , `datetime_created` TIMESTAMP NOT NULL , PRIMARY KEY (`employee_id`)) ENGINE = InnoDB;
+
+
+ACTIVITY: INSERT
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Juan','Dela Cruz','Mr.','30','500',NOW());
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Jonie','Weber','Mr.','28','19500.00',NOW());
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Potsy','Weber','Mrs.','22','45200.00',NOW());
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Dirk','Smith','Mr.','45','75020.00',NOW());
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Piolo','Valledor','Mr.','18','0.00',NOW());
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Jan','Edu','Ms.','18','0.00',NOW());
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Alyssa','Isuan','Ms.','17','200',NOW());
+
+INSERT INTO `tbl_employees`(`employee_id`, `fname`, `lname`, `title`, `age`, `salary`, `datetime_created`) VALUES (NULL,'Bea','Ariola','Ms.','17','500',NOW());
+
+
+ACTIVITY: SELECT
+
+SELECT * FROM `tbl_employees` WHERE 1
+
+SELECT `fname`, `lname`, `age`  FROM `tbl_employees` WHERE `age` <= 20;
+
+SELECT * FROM `tbl_employees` WHERE `age` > 17 ORDER BY `fname` ASC;
+
+SELECT * FROM `tbl_employees` WHERE `age` > 17 ORDER BY `fname` DESC;
